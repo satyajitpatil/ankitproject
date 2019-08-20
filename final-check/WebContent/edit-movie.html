@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel=stylesheet  href="style/style.css"/></link>
+
+<meta charset="ISO-8859-1">
+<title>editMovie</title>
+</head>
+<body>
+<nav id=navi>
+<h1 class="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Movie Cruiser <img id="imge" src="images/Logo.png"></img>
+<a id="tru" href="movie-list-admin.html">Movies</a></h1>
+</nav>
+<br/>
+<br/>
+<h1 id="menuEdit">Edit Movie</h1>
+<form action="" name="edit-form">
+
+	<div id="menu">
+		Title<br/>
+		<input id="edit-name-field" type="text"  name="name" required placeholder="Avengers-End Game"><br/>
+		<br/><br/>		
+		
+		<div class="container">
+		<ul>
+			<li class="list-of-inputs">
+				<div class="elements">
+			   		Gross ($)<br/>
+			    	<input type="number" required placeholder="2787965087">
+		    	</div>
+		    </li>
+		    <li class="list-of-inputs">
+		    	<div class="elements">
+					Active<br/>
+					<input type="radio" name="branch" value="Yes">Yes <input type="radio" name="branch" value="No">No
+		    	</div>
+		    </li>
+		    <li class="list-of-inputs">
+		    	<div class="elements">
+					Date of Launch<br/>
+					<input type="date" name="date-of-lauch" required placeholder="27/04/2022">
+		    	</div>
+		    </li>
+		    <li class="list-of-inputs">
+		    	<div class="elements">
+					Genre<br/>
+					<select id="Dropdown-box">
+ 						<option value="Science Fiction">Science Fiction</option>
+  						<option value="Superhero">Superhero</option>
+  						<option value="Romance">Romance</option>
+  						<option value="Comedy">Comedy</option>
+  						<option value="Adventure">Adventure</option>
+  						<option value="Thriller">Thriller</option>
+					</select>
+		    	</div>
+		    </li>		    
+		    
+		</ul>		    
+		</div>
+		<br/><br/><br/><br/>
+		<label >
+			<input id="freedelivery" type="checkbox" name ="FreeDelivery" value="freedelivery">Has Teaser
+			<span class="custom-checkbox"></span>
+		</label>
+		<br/><br/><br/>
+		<input id="save_button" type="button" value=Save onclick=""/>
+		
+		</div>
+	</form>
+
+<footer id="bottom">
+<h2 id="foot">Copyright &copy; 2019</h2>
+</footer>
+</body>
+</html>
